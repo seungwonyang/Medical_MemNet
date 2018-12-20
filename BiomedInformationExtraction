@@ -1,0 +1,36 @@
+Project Description for Biomedical Information Extraction 
+
+We aim to develop a framework for biomedical information extraction from various sources 
+such as biomedical articles, EMR, and other medical documents, which are publicly accessible.  
+
+Our project is, in particular, to focus on PubMed datasets, which pose considerable challenges 
+with respect to its size, complexity, and ever-growing content.  Leveraging recent advances 
+in Deep Learning, primarily built upon generative models, our framework is expected to be greatly 
+impactful for the field of clinical NLP and text mining due to its potentials for wide applications, 
+providing a scalable and robust information extraction services.  
+
+While our framework is constructed to be an end-to-end architecture, it is framed as modular, 
+which comprises three components, together achieving flexible pipelines for biomedical event 
+detection and Question/Answering (QA) system.  
+
+The first component is the text preprocessing module, and the second one is the Deep Learning 
+module for Natural Language Understanding (NLU) tasks, and the third one is the post processing 
+module.  Notably, machine learning methods in general and Deep Learning in particular outperform 
+traditional rule-based approaches in event extraction, as well as other information retrieval 
+tasks from biomedical articles. Our framework is to incorporate techniques and ideas from both 
+sides of Deep Learning and rule-based approaches for overcoming the novel challenges by using 
+machine reasoning. At the same time, our framework is expected to achieve reliable and 
+comprehensive performance by combining proven capabilities of conventional NLP tasks with 
+existing open source tools and methods.  
+
+During this project, the focused effort is developing an overall infrastructure that can handle 
+PubMed datasets, process NLP tasks for preprocessing of inputs and postprocessing of outputs 
+for the Deep Learning (DL) module, and manage DL tasks.  Since our direction is to develop 
+a QA system and biomedical event detection in the long run, we will exploit existing NLP tools 
+and APIs among various open source tools including Stanford CoreNLP, NLTK, OpenNLP, Spacy, Gensim, 
+and many others, in order to streamline the required tasks toward key-value based knowledgebase 
+for QA, as well as feature extractions for biomedical event detection system.  Note that such 
+developed tools and scripts are immediately utilized for post-processing tasks of outputs from 
+the DL modules and NLP tasks during the pre-processing step (e.g., generating answers with our 
+own Natural Language Generation tools, visualizing results).  
+
