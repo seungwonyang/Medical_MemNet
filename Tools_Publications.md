@@ -21,6 +21,13 @@ https://opennlp.apache.org/
 EasyPubMed
 https://cran.r-project.org/web/packages/easyPubMed/vignettes/easyPM_vignette_html.html
 
+
+# Datasets
+
+BioNLP Datasets
+https://www.ncbi.nlm.nih.gov/research/bionlp/Data/
+
+
 # Conferences & Workshops
 
 BioNLP Workshop
