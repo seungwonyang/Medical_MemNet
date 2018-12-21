@@ -21,6 +21,9 @@ https://opennlp.apache.org/
 EasyPubMed
 https://cran.r-project.org/web/packages/easyPubMed/vignettes/easyPM_vignette_html.html
 
+Open Neural Network Exchange Format
+https://onnx.ai/
+
 
 # Datasets
 
@@ -32,3 +35,7 @@ https://www.ncbi.nlm.nih.gov/research/bionlp/Data/
 
 BioNLP Workshop
 https://aclweb.org/aclwiki/BioNLP_Workshop
+
+
+# Publications
+
