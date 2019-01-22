@@ -1,5 +1,5 @@
 Scalable KVmemNN architecture
-v 1.0
+(v 1.0)
 - primarily focusing on the use with HPC environments (comet and bridges) with GPU-equipped nodes
 - container with Singularity
 - distributed and parallel task management with DASK
