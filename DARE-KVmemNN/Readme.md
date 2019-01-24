@@ -5,3 +5,14 @@ Scalable KVmemNN architecture
 - distributed and parallel task management with DASK
 - distributed and parallel NN models (train and test) with PyTorch
 - distributed memory for large datasets
+
+
+(Resource)
+Comet
+
+
+
+
+Bridges
+
+
