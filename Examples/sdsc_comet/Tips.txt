@@ -1,0 +1,11 @@
+[neesittg@comet-ln3 ~]$ show_accounts --gpu
+ID name      project      used     available    used_by_proj
+------------------------------------------------------------
+neesittg     uic365       1        2500         1
+neesittg     sds164       16       2500         36
+ 
+To charge your job to one of these projects replace  << project >>
+with one from the list and put this Slurm directive in your job script:
+#SBATCH -A << project >>
+
+
