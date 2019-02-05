@@ -1,1 +1,11 @@
+Objective
+
+Python scripts for Biomedical Information Extraction, Event Detection, and Key-Value for DARE-KV-Memory Network.
+
+Planning
+
+a. Survey python NLP tools for elemenatary tasks
+b. Dependency parsing with Stanford Core NLP (or alternatives)
+c. Biomedical Event Detection (method will be chosen)
+d. Key-Value data processing
 
