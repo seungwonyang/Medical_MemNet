@@ -4,8 +4,9 @@ Python scripts for Biomedical Information Extraction, Event Detection, and Key-V
 
 Planning
 
-a. Survey python NLP tools for elemenatary tasks
-b. Dependency parsing with Stanford Core NLP (or alternatives)
-c. Biomedical Event Detection (method will be chosen)
-d. Key-Value data processing
+a. Downloading PubMed 
+b. Survey python NLP tools for elemenatary tasks
+c. Dependency parsing with Stanford Core NLP (or alternatives)
+d. Biomedical Event Detection (method will be chosen)
+e. Key-Value data processing
 
