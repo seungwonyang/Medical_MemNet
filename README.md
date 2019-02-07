@@ -14,13 +14,11 @@ C. Developing a distributed meta-learning version (DARE-KVMemNN) and benchmarkin
 
 - BioNLP for PubMed
 
-A. LSU DigitalScholoarship
+D. LSU DigitalScholoarship (60 hours of student worker support)
 
-B. 60 hours of student worker support
+E. python scripts for biomedical text mining and Ke-Value data processing
 
-C. python scripts for biomedical text mining and Ke-Value data processing
-
-D. see digitalscholarship folder more details
+F. see digitalscholarship folder more details
 
 
 
