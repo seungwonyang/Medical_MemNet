@@ -5,8 +5,7 @@ This is implemeted on my desktop which is ruiining ubuntu linux.
 # Reuirements
 You must have Python 2.7+, pip, and virtualenv installed. There are no other requirements.
 # Run
-``% virtualenv venv``
-
+``% virtualenv venv``<br>
 ``% source venv/bin/activate``
 ``% pip install -r requirements.txt``
 ``% python gen_dict.py``
