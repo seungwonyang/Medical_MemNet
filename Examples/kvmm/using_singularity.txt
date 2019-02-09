@@ -1,0 +1,10 @@
+[neesittg@comet-14-01 memnn]$ module load singularity
+[neesittg@comet-14-01 memnn]$ singularity shell ~/singularity/pytorch-gpu-sdsc.img
+Singularity: Invoking an interactive shell within container...
+
+Singularity pytorch-gpu-sdsc.img:~/scale_test/kvmm/memnn> export PATH="/opt/miniconda2/bin:${PATH}"
+Singularity pytorch-gpu-sdsc.img:~/scale_test/kvmm/memnn>
+Singularity pytorch-gpu-sdsc.img:~/scale_test/kvmm/memnn> python gen_sim_data.py
+Singularity pytorch-gpu-sdsc.img:~/scale_test/kvmm/memnn> exit
+exit
+
