@@ -6,7 +6,7 @@ This repo including implementations of End-to-End Memory Network and Key-Value M
 You must have Python 2.7+, pip, and virtualenv installed. There are no other requirements.
 
 # Data generation
-You can use the singularity container. Please see this file, "using_singularity.txt".
+You can use the singularity container. Please see this file, "using_singularity.txt[https://github.com/seungwonyang/Medical_MemNet/blob/master/Examples/kvmm/using_singularity.txt]".
 
 # Run
 * % ./setup\_processed\_data.sh
