@@ -72,12 +72,10 @@ def run(rank, size):
    dataset = partition_dataset()
    print 'size', len(dataset[0])
    batch_size = config.batch_size * 64 # 8192
-   # train_q_iter = batch_sort_iter(dataset[0], batch_size, config.epoch, padding = True)
-   # train_a_iter = batch_sort_iter(dataset[1], batch_size, config.epoch, padding = True, sort=False)
-   # train_sim_iter = batch_sort_iter(dataset[2], batch_size, config.epoch, padding = False)
-   train_q_iter = batch_sort_iter_no_batch(dataset[0], batch_size, config.epoch, padding = True)
-   train_a_iter = batch_sort_iter_no_batch(dataset[1], batch_size, config.epoch, padding = True, sort=False)
-   train_sim_iter = batch_sort_iter_no_batch(dataset[2], batch_size, config.epoch, padding = False)
+   train_q_iter = batch_sort_iter(dataset[0], batch_size, config.epoch, padding = True)
+   train_a_iter = batch_sort_iter(dataset[1], batch_size, config.epoch, padding = True, sort=False)
+   train_sim_iter = batch_sort_iter(dataset[2], batch_size, config.epoch, padding = False)
+   
    #model = Net()
    gpu_rank = rank % 4
    print('gpu_rank = ', gpu_rank, ' rank = ', rank)
