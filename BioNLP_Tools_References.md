@@ -1,4 +1,6 @@
 # TOOLS
+NLTK
+https://www.nltk.org/
 
 Stanford CoreNLP
 https://stanfordnlp.github.io/CoreNLP/
@@ -8,9 +10,6 @@ https://allennlp.org/
 
 SpaCy
 https://spacy.io/
-
-NLTK
-https://www.nltk.org/
 
 Apache OpenNLP
 https://opennlp.apache.org/
