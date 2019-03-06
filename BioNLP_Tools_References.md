@@ -29,7 +29,8 @@ https://onnx.ai/
 
 BioNLP Datasets
 https://www.ncbi.nlm.nih.gov/research/bionlp/Data/
-
+PubMed Data Download
+https://www.nlm.nih.gov/databases/download/pubmed_medline.html
 
 # Conferences & Workshops
 
