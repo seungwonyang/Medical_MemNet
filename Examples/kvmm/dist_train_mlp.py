@@ -75,7 +75,9 @@ def run(rank, size):
    train_q_iter = batch_sort_iter(dataset[0], batch_size, config.epoch, padding = True)
    train_a_iter = batch_sort_iter(dataset[1], batch_size, config.epoch, padding = True, sort=False)
    train_sim_iter = batch_sort_iter(dataset[2], batch_size, config.epoch, padding = False)
-   
+   # train_q_iter = batch_sort_iter_no_batch(dataset[0], batch_size, config.epoch, padding = True)
+   # train_a_iter = batch_sort_iter_no_batch(dataset[1], batch_size, config.epoch, padding = True, sort=False)
+   # train_sim_iter = batch_sort_iter_no_batch(dataset[2], batch_size, config.epoch, padding = False)
    #model = Net()
    gpu_rank = rank % 4
    print('gpu_rank = ', gpu_rank, ' rank = ', rank)
@@ -99,7 +101,7 @@ def run(rank, size):
       #     loss = model.forward(dev_q_t, dev_a_t, dev_sim_t)
       #     print "Validation loss", loss.data.sum()
 
-   pre_embed_file = config.pre_embed_file+'_train_no_batch_'+str(rank)
+   pre_embed_file = config.pre_embed_file+'_train_'+str(rank)
    model.save(pre_embed_file)
 
    '''

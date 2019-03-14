@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+#SBATCH --account=uic365
+#SBATCH --partition=gpu
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=4
+#SBATCH --cpus-per-task=6
+#SBATCH --gres=gpu:4
+#SBATCH --time=02:00:00
+#SBATCH --no-requeue
+#SBATCH --job-name="similarity_embed"
+#SBATCH --output="similarity_embed.o%j.%N"
+
+declare -xr LOCAL_SCRATCH="/scratch/${USER}/${SLURM_JOB_ID}"
+declare -xr LUSTRE_SCRATCH="/oasis/scratch/comet/${USER}/temp_project"
+declare -xr LUSTRE_STORAGE="/oasis/projects/nsf"
+
+declare -xr SINGULARITY_MODULE='singularity'
+
+module purge
+module load "${SINGULARITY_MODULE}"
+module list
+printenv
+
+time -p SINGULARITYENV_PREPEND_PATH='/opt/miniconda2/bin' srun singularity exec /home/neesittg/tmp_scratch/kvmm/pytorch-gpu-sdsc.img python dist_train_mlp.py

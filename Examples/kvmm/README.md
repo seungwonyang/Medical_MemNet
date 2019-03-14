@@ -1,19 +1,22 @@
-# Implementation of Memory Network in pyTorch
-
+## Implementation of Memory Network in pyTorch
 This repo including implementations of End-to-End Memory Network and Key-Value Memory Network
 
-# Reuirements
-You must have Python 2.7+, pip, and virtualenv installed. There are no other requirements.
-
-# Data generation
+## Data generation
 You can use the singularity container on SDSC Comet. 
 I created singularity image so that you can copy it into your home directory.
-The location is /home/neesittg/scale_test/kvmm/pytorch-gpu-sdsc-cyoun.simg.
-Please see this file, "[using_singularity.txt](https://github.com/seungwonyang/Medical_MemNet/blob/master/Examples/kvmm/using_singularity.txt)" for using the singularity container.
+The location is **/home/neesittg/scale_test/kvmm/pytorch-gpu-sdsc-cyoun.simg**.
 
-# Run
-* % ./setup\_processed\_data.sh
-* run the singularity in order to gen\_dict.py to generate the dictionary file
-* run the singularity in order to gen\_sim\_data.py to generate the data for training similarity function
-* After exiting the singularity container, you can submit the job into slurm scheduler.
-* % sbatch slurm\_script.sb
+## Run
+Before running the following steps, you need to correct the path in each slurm scripts.
+1. Get the processed data
+    * % ./setup_processed_data.sh
+2. Generate the dictionary file
+    * % sbatch slurm_gen_dict_script.sb
+3. Generate the data for training similarity function
+    * % sbatch slurm_gen_sim_data_script.sb
+4. Distribute train the similarity function
+    * % sbatch slurm_mlp_script.sb
+5. Generate the data for reader
+    * % sbatch slurm_gen_reader_data_script.sb
+6. Distribute train the key-value memory network model
+    * % sbatch slurm_kvmm_script.sh

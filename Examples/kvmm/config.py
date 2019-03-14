@@ -11,7 +11,7 @@ class Config():
         self.filter_size = 100
 
         self.batch_size = 128
-        self.epoch = 100
+        self.epoch = 10
         self.lr = 0.005
         self.l2 = 0.00001
         self.valid_every = self.batch_size * 100
