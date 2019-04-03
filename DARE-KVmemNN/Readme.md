@@ -14,7 +14,7 @@ Comet
 - Singularity support
 - Sheduler : SLURM
 - Limits :  upto 8 nodes
-
+- Lustre file system :  /oasis/scratch/comet/$your username/$temp_project/
 
 
 Bridges
