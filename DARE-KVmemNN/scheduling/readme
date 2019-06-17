@@ -1,0 +1,15 @@
+DASK scheduler set up on HPC
+
+dask-scheduler --scheduler-file /path/to/scheduler.json  # writes address to file
+
+dask-worker --scheduler-file /path/to/scheduler.json  # reads file for address
+dask-worker --scheduler-file /path/to/scheduler.json  # reads file for address
+>>> client = Client(scheduler_file='/path/to/scheduler.json')
+
+This can be particularly useful when deploying dask-scheduler and dask-worker processes using a job scheduler like SGE/SLURM/Torque/etc. Here is an example using SGE’s qsub command:
+
+# Start a dask-scheduler somewhere and write the connection information to a file
+qsub -b y /path/to/dask-scheduler --scheduler-file /home/$USER/scheduler.json
+
+# Start 100 dask-worker processes in an array job pointing to the same file
+qsub -b y -t 1-100 /path/to/dask-worker --scheduler-file /home/$USER/scheduler.json
