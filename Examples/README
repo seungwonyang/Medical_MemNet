@@ -1,4 +1,4 @@
 Folder description
 kvmm : includes distributed versions 
 sdsc-comet : scripts for comet which is a cluster with multiple GPUs for each node
-MemNet-desktop :  slightly modified one for a desktop environment with a single GPU 
+MemNet-desktop :  slightly modified one for a desktop environment with/without GPU 
